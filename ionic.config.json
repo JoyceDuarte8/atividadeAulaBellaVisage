@@ -1,0 +1,7 @@
+{
+  "name": "BellavisageDisApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,96 @@
+
+  <ion-toolbar>
+    <div  weith= "1px "style="display: flex; justify-content:right;">
+      <ion-img src="./assets/img/logo-pequeno-bellavisage.png"></ion-img>
+    </div>
+    <ion-button>
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      <ion-button router-link="/login" router-direction="back">Login</ion-button>
+    </ion-button>
+  </ion-toolbar>
+    <ion-content class="ion-padding">
+      <ion-card-content>
+        <ion-card-title>
+          <img
+          alt="imagem-central-fundo"
+          src="./assets/img/template-fundo-bellavisagem.png"
+          />
+        </ion-card-title>
+
+            <img
+            alt="imagem-central-fundo"
+            src="./assets/img/img-home/mulher.jpg"
+            />
+      </ion-card-content>
+      <ion-card>
+        <ion-card-subtitle> Planos Estéticos Imperdíveis</ion-card-subtitle>
+      </ion-card>
+      <div style="display: flex; justify-content: center;">
+          <h3>Conheça os nossos tratamentos!</h3>
+      </div>
+
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Tratamento Facial</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Conheça os nossos tratamentos faciais e descubra qual é o melhor para você!</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Tratamento Facial</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Conheça os nossos tratamentos faciais e descubra qual é o melhor para você!</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title alignment="center">Tratamento Facial</ion-card-title>
+        </ion-card-header>
+        <ion-card-content alignment="center">
+          <p>Conheça os nossos tratamentos faciais e descubra qual é o melhor para você!</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Tratamento Facial</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Conheça os nossos tratamentos faciais e descubra qual é o melhor para você!</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+  <ion-footer collapse="fade">
+    <ion-toolbar>
+      <ion-title>
+        <h5>BellaVisage 2024</h5>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+  <script lang="ts">
+    import { IonBackButton, IonButton, IonButtons, IonIcon, IonMenuButton, IonTitle, IonToolbar } from '@ionic/vue';
+    import { create, ellipsisHorizontal, ellipsisVertical, helpCircle, search, personCircle, star } from 'ionicons/icons';
+    import { defineComponent } from 'vue';
+
+    export default defineComponent({
+      components: { IonBackButton, IonButton, IonButtons, IonIcon, IonMenuButton, IonTitle, IonToolbar },
+      setup() {
+        return { create, ellipsisHorizontal, ellipsisVertical, helpCircle, search, personCircle, star };
+      },
+    });
+  </script>
+<style scoped>
+   ion-card-subtitle {
+    --color: #950341;
+  }
+  h3 {
+    color: #950341;
+  }
+  h5 {
+    color: #dd387d;
+  }
+</style>

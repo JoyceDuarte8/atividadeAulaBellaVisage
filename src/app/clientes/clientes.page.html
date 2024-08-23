@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">clientes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-accordion-group>
+    <!-- Iterar sobre cada cliente e criar um accordion separado -->
+    <ion-accordion *ngFor="let cliente of clientes" value="{{ cliente.nome }}">
+      <ion-item slot="header" color="light">
+        <ion-label>{{ cliente.nome }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>CPF: {{ cliente.cpf }}</p>
+        <p>Data de Nascimento: {{ cliente.dataNascimento }}</p>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>
