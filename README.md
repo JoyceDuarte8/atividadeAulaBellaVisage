@@ -1,4 +1,4 @@
-## 🔨 APP BellaVisage - Clínica de Estética
+##  APP BellaVisage - Clínica de Estética
 
 Aplicação Web de simulação de Agendamento de serviços de uma clínica de estética. Elaborado durante a disciplina de Desenvolvimento de Sistemas para Dispositiveis Móveis - Faculdade Senai/FATESG.
 
